@@ -6,8 +6,9 @@ import ejs from 'ejs';
 const db = new pg.Client({
     user: "postgres",
     host: "localhost",
-    database: "Login",
-    password: "Set your postgres Password" 
+    database: "appdb",
+    password: "postgres",
+    port: "5432"
 });
 db.connect();
 
